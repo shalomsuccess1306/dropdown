@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="nav-item dropdown" (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
+        <a href="#">Services</a>
+        <ul class="dropdown-menu" [ngClass]="{'show': dropdownOpen}">
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
